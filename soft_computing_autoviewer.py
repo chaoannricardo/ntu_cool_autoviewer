@@ -29,7 +29,7 @@ driver = webdriver.Firefox(executable_path='./geckodriver/geckodriver')
 
 for index, video_link in enumerate(video_link_list):
     for i in range(view_time):
-        print('# Now watching:', video_link, 'for the', (index+1), 'time')
+        print('# Now watching:', video_link, 'for the', (i+1), 'time')
         if i == 0 and index == 0:
             driver.get(video_link)
             driver.find_element_by_xpath('//*[@id="saml"]').click()
