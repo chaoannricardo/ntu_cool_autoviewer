@@ -52,11 +52,10 @@ for index, video_link in enumerate(video_link_list):
             elem.send_keys(password)
             elem = driver.find_element_by_id('ContentPlaceHolder1_SubmitButton')
             elem.click()
-            time.sleep(5)
         else:
             driver.get(video_link)
-            time.sleep(5)
 
+        time.sleep(20)
         # get into the frame and start the video
         driver.switch_to.frame(driver.find_element_by_id('tool_content'))
         # elem = driver.find_element_by_xpath('/html/body/div[2]/div/div/div[1]/div[5]/button[1]')
