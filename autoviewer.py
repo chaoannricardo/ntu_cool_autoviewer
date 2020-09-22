@@ -75,8 +75,9 @@ for index, video_link in enumerate(video_link_list):
         
         # small interval sleep
         time.sleep(small_interval)
-
-
+        
+# print out message when the program is complete.
+print('# Done!')
     
     
     
